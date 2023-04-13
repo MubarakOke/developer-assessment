@@ -11,6 +11,11 @@ Run this command to start the production server
 docker compose -f docker-compose.yml up
 ```
 
+Run this command to seed data to database
+```
+docker exec lifestore_backend python manage.py loaddata product
+```
+
 Access the running server at
 ```
 http://127.0.0.1
