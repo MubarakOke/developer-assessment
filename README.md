@@ -3,10 +3,6 @@
 
 After pulling this repo, run the following to build the docker image
 ```
-make build
-```
-or 
-```
 docker compose -f docker-compose.yml build
 ```
 
