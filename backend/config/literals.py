@@ -1,4 +1,9 @@
-SECRET_KEY= "77%$%^&*&909999*&^^||||^&&%^$#$%^&"
+SECRET_KEY= '77%$%^&*&909999*&^^||||^&&%^$#$%^&'
 DEBUG= True
 PRODUCTION= False
-DJANGO_SETTINGS_MODULE= "config.settings.local"
+DJANGO_SETTINGS_MODULE= 'config.settings.local'
+POSTGRES_DB='postgres'
+POSTGRES_USER='postgres'
+POSTGRES_PASSWORD='Abdulmalik'
+DB_HOST='127.0.0.1'
+DB_PORT=5432
