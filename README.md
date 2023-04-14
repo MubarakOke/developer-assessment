@@ -8,7 +8,7 @@ docker compose -f docker-compose.yml build
 
 Run this command to start the production server
 ```
-docker compose -f docker-compose.yml up
+docker compose -f docker-compose.yml up --detach
 ```
 
 Run this command to seed data to database

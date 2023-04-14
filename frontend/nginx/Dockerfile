@@ -2,7 +2,7 @@
 FROM node as build
 WORKDIR /frontend
 COPY frontend .
-RUN yarn install
+RUN npm install
 RUN echo "Running build command for production"
 RUN GENERATE_SOURCEMAP=false npm run build
 

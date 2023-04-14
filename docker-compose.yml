@@ -22,7 +22,7 @@ services:
     ports:
       - 8000
     env_file:
-      - ./backend/envs/.env
+      - ./config.env
     depends_on:
       - db
     restart: unless-stopped
@@ -34,7 +34,7 @@ services:
       dockerfile: ./frontend/nginx/Dockerfile
     ports:
       - 80:80
-      - 8888:8888
+      - 8000:8000
     volumes:
       - ./frontend/nginx:/etc/nginx/conf.d
       - ./backend/config/static/:/usr/share/nginx/html/static/
