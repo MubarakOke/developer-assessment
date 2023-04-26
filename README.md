@@ -13,7 +13,7 @@ docker compose -f docker-compose.yml up --detach
 
 Run this command to seed data to database
 ```
-docker exec lifestore_backend python manage.py loaddata product
+docker exec --workdir /backend lifestore_backend python manage.py loaddata product
 ```
 
 Access the running server at
